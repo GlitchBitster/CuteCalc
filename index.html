@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A cute pink-themed calculator with adorable sound effects on every keypress.">
+  <title>Cute Pink Calculator 🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Floating decorations -->
+  <div class="floating-hearts" aria-hidden="true">
+    <span class="heart" style="--i:0">💖</span>
+    <span class="heart" style="--i:1">🌸</span>
+    <span class="heart" style="--i:2">💗</span>
+    <span class="heart" style="--i:3">🌷</span>
+    <span class="heart" style="--i:4">💕</span>
+    <span class="heart" style="--i:5">🌺</span>
+    <span class="heart" style="--i:6">💖</span>
+    <span class="heart" style="--i:7">🌸</span>
+    <span class="heart" style="--i:8">💗</span>
+    <span class="heart" style="--i:9">🌷</span>
+  </div>
+
+  <div class="calculator-wrapper">
+    <h1 class="title">🌸 Cute Calculator 🌸</h1>
+    <div class="calculator">
+      <!-- Display -->
+      <div class="display-container">
+        <div class="expression" id="expression"></div>
+        <div class="display" id="display">0</div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button class="btn btn-clear"  data-action="clear">AC</button>
+        <button class="btn btn-special" data-action="backspace">⌫</button>
+        <button class="btn btn-special" data-action="percent">%</button>
+        <button class="btn btn-operator" data-action="operator" data-value="/">÷</button>
+
+        <button class="btn btn-number" data-action="number" data-value="7">7</button>
+        <button class="btn btn-number" data-action="number" data-value="8">8</button>
+        <button class="btn btn-number" data-action="number" data-value="9">9</button>
+        <button class="btn btn-operator" data-action="operator" data-value="*">×</button>
+
+        <button class="btn btn-number" data-action="number" data-value="4">4</button>
+        <button class="btn btn-number" data-action="number" data-value="5">5</button>
+        <button class="btn btn-number" data-action="number" data-value="6">6</button>
+        <button class="btn btn-operator" data-action="operator" data-value="-">−</button>
+
+        <button class="btn btn-number" data-action="number" data-value="1">1</button>
+        <button class="btn btn-number" data-action="number" data-value="2">2</button>
+        <button class="btn btn-number" data-action="number" data-value="3">3</button>
+        <button class="btn btn-operator" data-action="operator" data-value="+">+</button>
+
+        <button class="btn btn-number btn-zero" data-action="number" data-value="0">0</button>
+        <button class="btn btn-number" data-action="decimal">.</button>
+        <button class="btn btn-equals" data-action="equals">=</button>
+      </div>
+    </div>
+    <p class="footer-text">Made with 💖 and cute sounds</p>
+  </div>
+
+  <script src="sounds.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
